@@ -25,13 +25,13 @@ def callback():
     #sendText(user,userText)
     if(userText == 'สวัสดี') :
        sendText(user,'ว่าไงมนุษย์')
-    elif(userText == 'ไปละนะ') :
+    (userText == 'ไปละนะ') :
          sendText(user,'เออ.. บาย')
-    elif(userText == 'เฮ็ดหยังอยู่') :
+    (userText == 'เฮ็ดหยังอยู่') :
          sendText(user,'แลกเปลี่ยนอายุขัยมนุษย์โลก')
-    elif(userText == 'ซาตานหรอ?') :
+    (userText == 'ซาตานหรอ?') :
          sendText(user,'ใช่แล้ว เจ้าคนบาป')
-    else(userText == 'sayonara นะคุณซาตาน'):
+    (userText == 'sayonara นะคุณซาตาน'):
          sendText(user,'ภาษามนุษย์โลกข้าไม่รู้หรอก')
   
     return '',200
