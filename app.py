@@ -20,8 +20,10 @@ def callback():
     json_line = request.get_json()
     json_line = json.dumps(json_line)
     decoded = json.loads(json_line)
-    user = decoded[DetectlntentRequest'replyToken']
-    userText = decoded['queryResult']['intent']['displayName']
+    
+    
+    user = decoded["events"][0]['replyToken']
+    userText = decoded["events"][0]['message']['text']
     #sendText(user,userText)
     if(userText == 'สวัสดี') :
        sendText(user,'ว่าไงมนุษย์')
@@ -29,8 +31,6 @@ def callback():
          sendText(user,'เออ.. บาย')
     elif(userText == 'เฮ็ดหยังอยู่') :
          sendText(user,'แลกเปลี่ยนอายุขัยมนุษย์โลก')
-    elif(userText == 'ซาตานหรอ?') :
-         sendText(user,'ใช่แล้ว เจ้าคนบาป')
     else(userText == 'sayonara นะคุณซาตาน'):
          sendText(user,'ภาษามนุษย์โลกข้าไม่รู้หรอก')
     return '',200
