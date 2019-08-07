@@ -29,8 +29,6 @@ def callback():
        sendText(user,'ว่าไงมนุษย์')
     elif(userText == 'ไปละนะ') :
          sendText(user,'เออ.. บาย')
-    elif(userText == 'เฮ็ดหยังอยู่') :
-         sendText(user,'แลกเปลี่ยนอายุขัยมนุษย์โลก')
     else(userText == 'sayonara นะคุณซาตาน'):
          sendText(user,'ภาษามนุษย์โลกข้าไม่รู้หรอก')
     return '',200
