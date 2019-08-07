@@ -31,7 +31,7 @@ def callback():
          sendText(user,'แลกเปลี่ยนอายุขัยมนุษย์โลก')
     elif(userText == 'ซาตานหรอ?') :
          sendText(user,'ใช่แล้ว เจ้าคนบาป')
-    else(userText ==,'sayonara นะคุณซาตาน'):
+    else(userText == 'sayonara นะคุณซาตาน'):
          sendText(user,'ภาษามนุษย์โลกข้าไม่รู้หรอก')
   
     return '',200
