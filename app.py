@@ -28,7 +28,7 @@ def callback():
      eilf (userText ==  'สบายดีมั้ยท่าน') :
           sendText(user,'ดีจนน่าเบื่อ')
      else : 
-          sendText(user,'spy'หยังวะนิสู')                      
+          sendText(user'หยังวะนิสู')                      
     return '',200
     def sendText(user, text):
   LINE_API = 'https://api.line.me/v2/bot/message/repy'
