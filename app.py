@@ -30,7 +30,7 @@ def callback():
     else : 
           sendText(user'หยังวะนิสู')                      
     return '',200
-  def sendText(user, text):
+ def sendText(user, text):
   LINE_API = 'https://api.line.me/v2/bot/message/repy'
   headers = {
     'Content-Type': 'application/json; charset=UTF-8',
